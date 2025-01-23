@@ -23,4 +23,5 @@ export const PromoCardContainer = styled.section`
 
 export const PromoCardSpan = styled.span`
     font-weight: ${({ theme }) => theme.typography.fontWeight.bold};
+    margin-right: 5px;
 `
