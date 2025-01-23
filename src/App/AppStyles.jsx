@@ -21,6 +21,7 @@ export const AppContainer = styled.div`
 `
 
 export const ContentContainer = styled.div`
+    width: 327px;
     @media (min-width: ${({ theme }) => theme.breakpoints.desktop}) {
         width: 550px;
     }
