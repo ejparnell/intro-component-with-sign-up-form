@@ -15,6 +15,7 @@ export const theme = {
             subText: '11px',
             p: '16px',
             h1: '28px',
+            h1Desktop: '50px'
         },
         fontFamily: '"Poppins", serif',
         fontWeight: {
@@ -27,6 +28,6 @@ export const theme = {
     breakpoints: {
         mobile: '375px',
         tablet: '768px',
-        desktop: '1440px'
+        desktop: '1024px'
     }
 }

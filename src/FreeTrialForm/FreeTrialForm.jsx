@@ -55,6 +55,7 @@ export function FreeTrialForm() {
             {['firstName', 'lastName', 'email', 'password'].map((field, index) => (
                 <InputWrapper key={index}>
                     <FreeTrialFormInput
+                        $isError={errors[field]}
                         name={field}
                         type={field === 'password' ? 'password' : field === 'email' ? 'email' : 'text'}
                         placeholder={

@@ -10,9 +10,15 @@ export const PromoCardContainer = styled.section`
     text-align: center;
     color: ${({ theme }) => theme.colors.white};
     font-size: ${({ theme }) => theme.typography.fontSize.p};
-    font-weight: ${({ theme }) => theme.typography.fontWeight.regular};
+    margin-bottom: 30px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     font-weight: 100;
+
+    @media (min-width: ${({ theme }) => theme.breakpoints.desktop}) {
+        width: 540px;
+        flex-direction: row;
+        justify-content: center;
+    }
 `
 
 export const PromoCardSpan = styled.span`

@@ -8,13 +8,19 @@ export const FreeTrialFormContainer = styled.form`
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    align-items: center;
     border-radius: 8px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+    @media (min-width: ${({ theme }) => theme.breakpoints.desktop}) {
+        width: 540px;
+    }
 `
 
 export const InputWrapper = styled.div`
     position: relative;
     width: 100%;
+    text-align: center;
 `
 
 export const FreeTrialFormInput = styled.input`
@@ -23,6 +29,10 @@ export const FreeTrialFormInput = styled.input`
     border: 1px solid ${({ theme, $isError }) => $isError ? theme.colors.red : theme.colors.gray};
     border-radius: 4px;
     text-indent: 10px;
+
+    @media (min-width: ${({ theme }) => theme.breakpoints.desktop}) {
+        width: 460px;
+    }
 `
 
 export const FreeTrialFormSubmit = styled.input`
@@ -34,6 +44,10 @@ export const FreeTrialFormSubmit = styled.input`
     text-align: center;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     color: ${({ theme }) => theme.colors.white};
+
+    @media (min-width: ${({ theme }) => theme.breakpoints.desktop}) {
+        width: 460px;
+    }
 `
 
 export const FreeTrialFormText = styled.p`
@@ -49,6 +63,11 @@ export const ErrorIcon = styled.img`
     top: 50%;
     transform: translateY(-50%);
     color: ${({ theme }) => theme.colors.red};
+
+    @media (min-width: ${({ theme }) => theme.breakpoints.desktop}) {
+        right: 40px;
+        top: 30px;
+    }
 `
 
 export const ErrorText = styled.p`
@@ -57,6 +76,10 @@ export const ErrorText = styled.p`
     color: ${({ theme }) => theme.colors.red};
     text-align: right;
     margin-right: 10px;
+
+    @media (min-width: ${({ theme }) => theme.breakpoints.desktop}) {
+        margin-right: 20px;
+    }
 `
 
 export const EmailExistsText = styled.p`
@@ -65,4 +88,8 @@ export const EmailExistsText = styled.p`
     top: 50%;
     transform: translateY(-50%);
     color: ${({ theme }) => theme.colors.red};
+
+    @media (min-width: ${({ theme }) => theme.breakpoints.desktop}) {
+        left: 40px;
+    }
 `

@@ -12,4 +12,16 @@ export const AppContainer = styled.div`
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+
+    @media (min-width: ${({ theme }) => theme.breakpoints.desktop}) {
+        background-image: url('/assets/bg-intro-desktop.png');
+        flex-direction: row;
+        justify-content: center;
+    }
+`
+
+export const ContentContainer = styled.div`
+    @media (min-width: ${({ theme }) => theme.breakpoints.desktop}) {
+        width: 550px;
+    }
 `
